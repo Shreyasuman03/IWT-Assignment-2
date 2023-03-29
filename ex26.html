@@ -1,0 +1,117 @@
+<!--Create a Webpage with two buttons start and stop. When user click on start button a
+timer should start to count seconds. When a user click on stop button then it should
+stop.-->
+
+<html>
+    <head>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            .container{
+                background-color: #202020;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                flex-direction: column;
+            }
+            #stopwatch{
+                font-size: 100px;
+                box-shadow: 0px 0px 10px black;
+                color:white;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+            #button{
+                display: flex;
+
+            }
+            button{
+                padding: 30px;
+                background-color: aqua;
+                border: none;
+                border-radius: 20px;
+                color: white;
+                font-size: larger;
+                width: 100px;
+                margin: 10px;
+                transition: all 0.5s;
+            }
+            button:hover{
+                cursor: pointer;
+            }
+            button:active{
+                transition: all 0.5s;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="stopwatch">
+
+            </div>
+            <div id="button">
+                <button onclick="startTimer()">START</button>
+                <button onclick="stopTimer()">STOP</button>
+                <button onclick="reseT()">Reset</button>
+            </div>
+        </div>
+        <script>
+            const timer=document.getElementById("stopwatch");
+            var hr=0;
+            var min=0;
+            var sec=0;
+            var stopTime=true;
+            function startTimer(){
+                if(stopTime==true){
+                    stopTime=false;
+                    startTime();
+                }
+            }
+            function stopTimer(){
+                if(stopTime==false){
+                    stopTime=true;
+
+                }
+            }
+            function startTime(){
+                if(stopTime==false){
+                    sec=parseInt(sec);
+                    hr=parseInt(hr);
+                    min=parseInt(min);
+                    sec=sec+1;
+                    if(sec==60){
+                        min=min+1;
+                        sec=0;
+                    }
+                    if(min==60){
+                        hr=hr+1;
+                        min=0;
+                        sec=0;
+                    }
+                    if(sec<10){
+                        sec="0"+sec;
+                    }
+                    if(min<10){
+                        min="0"+min;
+                    }
+                    if(hr<10){
+                        hr="0"+hr;
+                    }
+                    timer.innerHTML=hr+":"+min+":"+sec;
+                    setTimeout("startTime()",1000);
+                }
+                
+            }
+            function reseT(){
+                timer.innerHTML="00:00:00";
+                stopTime=true;
+                hr=0;
+                min=0;
+                sec=0;
+            }
+        </script>
+    </body>
+</html>

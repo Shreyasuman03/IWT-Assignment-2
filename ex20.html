@@ -1,0 +1,294 @@
+<!--Implement a one page personal website to present your resume. Design of the webpage should be like given example.
+https://sachagreif.com/
+Your webpage should also have a navigation menu.-->
+
+<html>
+    <head>
+        <style>
+
+           .nav1{
+            height: 15%;
+            width: 100%;
+            background-color: blue;
+            position: relative;
+            
+           }
+           
+            .li1{
+                list-style: none;
+                
+                
+            }
+            .li1 li{
+                float: left;
+               
+                padding-left:30px;
+                padding-right: 40px;
+
+                
+            }
+            
+            .li1  li a{
+                color: rgb(228, 138, 12);
+                font-weight: bolder;
+                font-size: 50px;
+                padding: 30px;
+                text-decoration: none;
+            }
+            .li1 li a:hover{
+                color: rgb(120,254,27);
+                border-bottom: 2px solid white;
+                
+            }
+            .intro{
+                height: 100vh;
+                background-color: #EB613D;
+                position: relative;
+            }
+            .bi{
+                height: 100vh;
+                background-color: deeppink;
+                position: relative;
+            }
+            .inner2{
+                position: absolute;
+                top:40px;
+                left: 40px;
+                right: 40px;
+                bottom: 150px;
+                font-size: 7vh;
+                margin-left: 20px;
+                background-color: aliceblue;
+                color: chocolate;
+                border: 1px solid;
+                box-shadow: 10px 20px blueviolet;
+            }
+            .inner2 h1{
+                position: absolute;
+                top:3%;
+                font-size: 50px;
+                margin-left: 30px;
+                color: black;
+
+            }
+            .inner2 p{
+                position: absolute;
+                top:10%;
+                margin-left: 50px;
+            }
+            .inner{
+                background-color: aliceblue;
+                color: chocolate;
+                font-family: Space Mono,monospace,sans-serif;
+                position:absolute;
+                top:40px;
+                left: 40px;
+                right: 40px;
+                bottom: 150px;
+                font-size: 7vh;
+                margin-left: 20px;
+                border: 1px solid;
+                box-shadow: 10px 20px blueviolet;
+            
+                
+            }
+            p{
+                margin-left: 30px;
+                margin-top: 100px;
+            }
+            .sk{
+                height: 100vh;
+                background-color: rgb(50,50,100);
+                position: relative;
+                
+            }
+            .inners{
+                background-color: rgb(248, 250, 252);
+                position: absolute;
+                top:40px;
+                left: 40px;
+                right: 40px;
+                bottom: 150px;
+                font-size: 7vh;
+                margin-left: 20px;
+                border: 1px solid;
+                box-shadow: 10px 20px blueviolet;
+            }
+            .prl{
+                border-radius: 25px;
+                border: 5px solid #07011c;
+                padding: 20px;
+                width: 200px;
+                height: 150px;
+                position: absolute;
+                top: 90px;
+                left:25%;
+                background-color: blueviolet;
+            }
+            .sub{
+                border-radius: 25px;
+                border: 5px solid #07011c;
+                padding: 20px;
+                width: 200px;
+                height: 150px;
+                position: absolute;
+                top: 90px;
+                left:60%;
+                background-color: blueviolet;
+            }
+            
+            .prl > ul li{
+            
+                padding-left: 30px;
+                font-size: 30px;
+                color: aqua;
+            }
+            .sub > ul li{
+            
+            padding-left: 30px;
+            font-size: 30px;
+            color: aqua;
+
+        }
+        .ed{
+            height: 100vh;
+            background-color: rgb(13, 207, 113);
+            position: relative;
+        }
+        .inner3{
+                background-color: rgb(248, 250, 252);
+                position: absolute;
+                top:40px;
+                left: 40px;
+                right: 40px;
+                bottom: 75px;
+                font-size: 5vh;
+                color: rgb(226, 153, 43);
+                border: 1px solid;
+                box-shadow: 10px 20px blueviolet;
+            }
+            .inner3 h3{
+                padding-left: 20px;
+                padding-bottom: 2px;
+               color: rgb(18, 127, 223);
+                
+            }
+            .ct{
+            height: 30vh;
+            background-color:aliceblue;
+            display: flex;
+            position: relative;
+            align-items: baseline;
+        }
+            .lk{
+                position: absolute;
+                top:50%;
+                left:50%;
+                
+            }
+            .gl{
+                position: absolute;
+                top:50%;
+                left:55%;
+            }
+        
+            .lk a img{
+                height:70px;
+            }
+          
+            .gl a img{
+                height: 70px;
+            }
+           
+            .intro .inner p img{
+                float: right;
+                margin:0px 0px 10px 10px;
+                height: 45%;
+                width: 25%;
+                
+                
+                
+            }
+            img:hover{
+                border: 5px solid #ee1212;
+                transform: scale(2);
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="navb">
+            <nav class="nav1">
+                <ul class="li1">
+                    <li><a href="#home">Intro</a></li>
+                    <li><a href="#Bio">Bio</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#edu">Education</a></li>
+                    <li><a href="#Con">Contact</a></li>
+                   
+                </ul>
+                
+            </nav>
+        </div>
+        <div class="intro" id="home">
+            
+            <div class="inner">
+              
+                <p> <img src="pr.jpg" alt="my image">I am Shreya Suman, a B.Tech 3rd Year student of Information Technology Of Banasthali Vidyapith</p>
+            </div>
+        </div>
+        <div class="bi" id="Bio">
+            <div class="inner2">
+            <h1>Bio</h1>
+            <p> I’ve always loved spending way too much time on the computer, and spent my teens tinkering with Photoshop and building crappy websites.</p>
+            </div>
+        </div>
+        <div class="sk" id="Skills">
+            <div class="inners">
+                <div class="prl">
+                    <ul>
+                        <li>C</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                    </ul>
+                </div>
+                <div class="sub">
+                    <ul>
+                        <li>Operating System</li>
+                        <li>DBMS</li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="ed" id="edu">
+            <div class="inner3">
+                <h3>
+                    School
+                </h3>
+                <h5>Bright Career School,Purnia,Bihar</h5>
+                <ul>
+                    <li>10th - 90%</li>
+                    <li>12th-85%</li>
+                </ul>
+                <hr>
+                <h3>Graduation</h3>
+                <h5>Banasthali Vidyapith</h5>
+                <ul>
+                    <li>8.56 upto 4th Semester</li>
+                </ul>
+            </div>
+        </div>
+        <div class="ct" id="Con">
+                <div class="lk">
+                    <a href="https://linkedin.com"><img src="link.jpg"></a>
+                </div>
+                <div class="gl">
+                    
+                    <a href="mailto:shreyasuman003@gmail.com" target="_self"> <img src="gmail.jpg" alt="gmail"></a>
+                    
+                </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!--Create a webpage that displays your favourite quotations in a web page just above images. You have to use border, height, width, margin, padding, outline properties of CSS. Also use text and font properties to add effects in text to display quotations.-->
+
+<html>
+    <head>
+        <style>
+        div{
+            height:400px;
+            width:300px;
+            position: relative;
+            float: left;
+            border: solid 2px rgb(200,49,123);
+            margin: 20px;
+
+        }
+        img{
+            height:100%;
+            width:100%;
+            z-index: -5;
+            position:absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+        }
+        h2{
+            font-style:italic;
+            font-weight: bolder;
+            font-size: 20px;
+            margin-left: 20px;
+            text-align: center;
+            color: beige;
+
+        }
+        
+    </style>
+    </head>
+    <body>
+            <h1>Favorite Quotations</h1>
+        <div>
+            <h2 style="z-index:20;">Success is most often achieved by those who don't know that failure is invietable</h2>
+            <img class="inner" src="images/6.jpg">
+        </div>
+        <div>
+            <h2 style="z-index:20;">Courage is grace under pressure</h2>
+            <img class="inner" src="images/6.jpg">
+        </div>
+        <div>
+            <h2 style="z-index:20;">If you are not willing to risk the usual, you will have to settle for the ordinary</h2>
+            <img class="inner" src="images/6.jpg">
+        </div>
+    </body>
+</html>
